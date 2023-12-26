@@ -41,6 +41,7 @@ const PORT = process.env.PORT || 4000;//comprueba si existe la variable PORT en 
 //hemos metido el puerto en una variable propia porque al hacer el deployiment nos podrá en el puerto que esté disponible
 const servidor= app.listen(PORT, () => {//almacenamos la referencia en una variable
   console.log(`Servidor correiendo en el puerto ${PORT}`);
+  console.log(`Url del frontEND ${process.env.FRONTED_URL}`)
 })
 
 //Socket.io
