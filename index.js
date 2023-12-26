@@ -51,7 +51,8 @@ const io = new Server(servidor, {
   pingTimeout: 60000,
   //recuerda, cors es desde donde le van a llegar las peticiones
   cors: {
-    origin: process.env.FRONTED_URL
+    origin: process.env.FRONTED_URL,
+    credentials: true
   }
 })
 //abrimos una nueva conexión
