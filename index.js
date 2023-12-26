@@ -29,7 +29,9 @@ const corsOptions = {
     }
   }
 }
-app.use(cors(corsOptions))//el primer param es el origin
+const cors = require('cors');
+
+app.use(cors())//el primer param es el origin
 
 //Routing /puede ser app.get/.post/.put/.delete - seguido del endpoint (.use es que admite todo)
 //está redirigiendo a usuarioRoutes.js. Cuando se escriba /api/usuarios -> redirige a usuarioRoutes.js y se ejecuta
