@@ -29,8 +29,6 @@ const corsOptions = {
     }
   }
 }
-const cors = require('cors');
-
 app.use(cors())//el primer param es el origin
 
 //Routing /puede ser app.get/.post/.put/.delete - seguido del endpoint (.use es que admite todo)
